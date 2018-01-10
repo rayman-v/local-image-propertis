@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <input type="file" id="file">
+  <img src="" id="img">
+  <input type="file" id="file2">
+  <img src="" id="img2">
+  <script src="LocalPicture.js"></script>
+  
+  <script>
+  LocalPicture('file', 'img').load(function(p) {
+    console.log(p);
+  })
+  LocalPicture('file2', 'img2').load(function(p) {
+    console.log(p);
+  })
+  </script>
+</body>
+</html>
